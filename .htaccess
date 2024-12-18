@@ -1,0 +1,6 @@
+ErrorDocument 404 https://www.synergyinstitute.net/
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^https://synergyinstitute.net/ [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.synergyinstitute.net/$1 [R,L]
